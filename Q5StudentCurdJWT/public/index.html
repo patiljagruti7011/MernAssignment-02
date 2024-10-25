@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+        /* Add CSS styles */
+    </style>
+</head>
+<body>
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="studentCrud" style="display: none;">
+        <h2>Student CRUD</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="grade" placeholder="Grade">
+        <button onclick="addStudent()">Add Student</button>
+        <div id="students"></div>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
